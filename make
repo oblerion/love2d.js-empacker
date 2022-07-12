@@ -3,15 +3,15 @@ DSRC="src/"
 NEXEC="main"
 
 CC=clang
-CFLAGS=" ../libbase64/obj/*.o -g -Wall -Werror -lm -static-libgcc"
-INC=" " 
+CFLAGS=" -g -Wall -Werror -lm -static-libgcc"
+INC=" -Iinclude" 
 EXEC=$NEXEC
 DOBJ="obj/"
 
 CC2=i686-w64-mingw32-gcc
 #CFLAGS2="-g -Wall -lm -L${RAYLIBWIN}/lib -lraylib -lopengl32 -lgdi32 -lwinmm -mwindows -static-libgcc"
-CFLAGS2=" ../libbase64/build/obj/*.o -g -Wall -lm -lgdi32 -lwinmm -mwindows -static-libgcc"
-INC2=" "
+CFLAGS2=" -g -Wall -lm -lgdi32 -lwinmm -mwindows -static-libgcc"
+INC2=" -Iinclude"
 #-I/usr/i696-w64-mingw32/include -lgdi32 -lwinmm
 EXEC2=""
 DOBJ2="build/obj/"
